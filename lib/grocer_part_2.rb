@@ -1,12 +1,10 @@
 require_relative './part_1_solution.rb'
-require 'pry' 
 def apply_coupons(cart, coupons)
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
   counter = 0 
   while counter < coupons.length do 
-   
     cart_item = find_item_by_name_in_collection(coupons[counter][:item], cart)
     item_with_coupon = "#{coupons[counter][:item]} W/COUPON"
     cart_item_with_coupon = find_item_by_name_in_collection(item_with_coupon,item)
