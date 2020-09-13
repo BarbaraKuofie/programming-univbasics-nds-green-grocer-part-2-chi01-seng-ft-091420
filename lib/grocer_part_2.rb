@@ -6,6 +6,9 @@ def apply_coupons(cart, coupons)
   # REMEMBER: This method **should** update cart
   applied_coupon_array = []
   counter = 0 
+  while counter < coupons.length do 
+    counter += 1 
+  end 
   binding.pry 
 end
 
