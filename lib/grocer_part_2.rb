@@ -8,7 +8,7 @@ def apply_coupons(cart, coupons)
   counter = 0 
   while counter < coupons.length do 
     counter += 1 
-    cart_item = find
+    cart_item = find_item_by_name_in_collection(coupons[])
   end 
   binding.pry 
 end
