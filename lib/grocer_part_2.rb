@@ -8,6 +8,7 @@ def apply_coupons(cart, coupons)
   counter = 0 
   while counter < coupons.length do 
     counter += 1 
+    cart_item = find
   end 
   binding.pry 
 end
