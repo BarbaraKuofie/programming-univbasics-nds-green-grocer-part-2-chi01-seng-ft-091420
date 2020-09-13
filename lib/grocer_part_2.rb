@@ -9,7 +9,7 @@ def apply_coupons(cart, coupons)
   while counter < coupons.length do 
     counter += 1 
     cart_item = find_item_by_name_in_collection(coupons[counter][:item], cart)
-    
+    item_with_coupon = 
   end 
   binding.pry 
 end
