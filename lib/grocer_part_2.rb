@@ -53,3 +53,4 @@ applied_coupons = apply_coupons(consolidate_cart, coupons)
  end 
  total 
 end
+end 
