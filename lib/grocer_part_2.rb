@@ -45,7 +45,7 @@ applied_coupons = applied_coupons(consolidate_cart)
  total = 0 
  counter = 0 
  while counter < clearance_cart.length do 
-   total = total +=
+   total = total += clearance_cart[counter][:price] * clearance_cart_cart[counter]
    counter += 1 
  end 
 end
