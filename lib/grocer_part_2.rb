@@ -1,4 +1,5 @@
 require_relative './part_1_solution.rb'
+require 'pry'
 def apply_coupons(cart, coupons)
   counter = 0 
   while counter < coupons.length do
@@ -44,8 +45,9 @@ def checkout(cart, coupons)
  clearance_cart = apply_clearance(coupons_applied)
  total = 0 
  counter = 0 
+ binding.pry 
  while counter < clearance_cart.length do 
-   total += clearance_cart[counter][:price] * clearance_cart[counter][:count]
+   total += clearance_cart[counter][:price] *clearance_cart[counter][:count]
    counter += 1 
  end 
  if total > 100
