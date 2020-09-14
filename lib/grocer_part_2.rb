@@ -39,6 +39,6 @@ end
 
 
 def checkout(cart, coupons)
-
+consolida
   
 end
