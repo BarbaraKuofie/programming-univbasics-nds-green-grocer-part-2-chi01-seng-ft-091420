@@ -40,12 +40,12 @@ end
 
 
 def checkout(cart, coupons)
+  binding.pry
   new_cart = consolidate_cart(cart)
   coupons_applied = apply_coupons(consolidate_cart, coupons)
  clearance_cart = apply_clearance(coupons_applied)
  total = 0 
  counter = 0 
- binding.pry 
  while counter < clearance_cart.length do 
    total += clearance_cart[counter][:price] *clearance_cart[counter][:count]
    counter += 1 
