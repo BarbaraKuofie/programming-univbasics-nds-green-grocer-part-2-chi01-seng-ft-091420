@@ -46,10 +46,10 @@ def checkout(cart, coupons)
  total = 0 
  counter = 0 
  while counter < clearance_cart.length do 
-    binding.pry 
    total += clearance_cart[counter][:price] *clearance_cart[counter][:count]
    counter += 1 
  end 
+     binding.pry 
  if total > 100
      total -= (total * 0.10)
  end 
