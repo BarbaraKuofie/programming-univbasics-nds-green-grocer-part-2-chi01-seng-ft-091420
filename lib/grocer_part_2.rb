@@ -45,6 +45,7 @@ applied_coupons = applied_coupons(consolidate_cart)
  total = 0 
  counter = 0 
  while counter < clearance_cart.length do 
+   total = total +=
    counter += 1 
  end 
 end
